@@ -1,0 +1,15 @@
+<h2>Tasks Lista</h2>
+<table class="table">
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Status</th>
+  </tr>
+  <tr *ngFor="let task of taskList">
+    <td>{{task.id}}</td>
+    <td>{{task.name}}</td>
+    <td>
+      <a routerLink="/taskList/{{task.id}}/tasks">Details</a>
+    </td>
+  </tr>
+</table>
