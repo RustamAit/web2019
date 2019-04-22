@@ -1,0 +1,39 @@
+
+<h2 class="main_header">Tasks List</h2>
+<div class="main-content" *ngIf="!isShowUpdateLayout">
+<div class="container-table">
+  <table class="table">
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Delete</th>
+      <th>Update</th>
+    </tr>
+    <tr class="taskListItem" *ngFor="let task of taskLists">
+      <td>{{task.id}}</td>
+      <td>{{task.name}}</td>
+      <td>
+        <a routerLink="/taskList/{{task.id}}/tasks">Tasks</a>
+      </td>
+      <td>
+        <button class="delete-button" (click)="deleteTaskList(task.id)">Delete</button>
+      </td>
+      <td>
+        <button class="update-button" (click)="showUpdateLayout(task.id)">Update</button>
+      </td>
+    </tr>
+  </table>
+</div>
+<div class="input-container">
+  <input class="name-input" type="text" placeholder="Name" [(ngModel)]="name" />
+  <button class="create-btn" (click)="createTaskList()">Create</button>
+</div>
+</div>
+
+<div *ngIf="isShowUpdateLayout">
+  <div class="input-container">
+  <input class="name-input" type="text" placeholder="Name" [(ngModel)]="updateName" />
+  <button class="create-btn" (click)="updateTaskList()">Update</button>
+</div>
+</div>
