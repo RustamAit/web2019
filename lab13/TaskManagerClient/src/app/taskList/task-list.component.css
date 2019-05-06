@@ -1,0 +1,70 @@
+
+.container-table{
+  width: 100%;
+  margin: 24px auto;
+
+}
+
+.table{
+  width: 50%;
+  margin: 24px auto;
+}
+
+.taskListItem{
+  border: 8px;
+  height: 64px;
+}
+.taskListItem td{
+    border-bottom: 1pt solid black;
+}
+
+.taskListItem td a{
+  text-decoration: none;
+  color: white;
+  background: indigo;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  padding: 8px 24px;
+}
+
+.delete-button{
+  color: white;
+  background: red;
+  border-radius: 8px;
+  border-color: red;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  font-size: 16px;
+  padding: 8px 24px;
+}
+
+
+.update-button{
+  color: white;
+  background: lightseagreen;
+  border-radius: 8px;
+  border-color: lightseagreen;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  font-size: 16px;
+  padding: 8px 24px;
+}
+
+.input-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.name-input{
+  width: 40%;
+  min-height: 48px;
+  margin: auto;
+}
+
+.create-btn{
+  width: 20%;
+  margin: 24px auto;
+  min-height: 48px;
+  font-size: 24px;
+  color: white;
+  background: chartreuse;
+}
+
